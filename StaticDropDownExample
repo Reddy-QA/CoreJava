@@ -1,0 +1,29 @@
+package DropDowns;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class StaticDropdownExample {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.tutorialspoint.com/market/teach-with-us.jsp");
+		
+		WebElement staticDropdown=driver.findElement(By.id("country_code"));
+		
+		Select s=new Select(staticDropdown);
+		s.selectByIndex(0);
+		System.out.println(s.getFirstSelectedOption().getText());
+		
+		s.selectByVisibleText("UAE (+971)");
+		System.out.println(s.getFirstSelectedOption().getText());
+		
+		driver.close();
+
+	}
+
+}
