@@ -6,3 +6,16 @@ Implicit wait Applied Globally
 Performance issues cant be caught in the ImplicitWait
 
 driver.manage().timeouts().Implicitwait(Duration.ofSeconds(5));
+
+//ExplicitWait Demo
+/*
+		WebDriverWait w=new WebDriverWait(driver, 15);
+				w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='start'] button")));
+		
+				System.out.println(driver.findElement(By.cssSelector("div[id='finish'] h4")).getText());
+*/
+
+//FluentWait
+
+Wait<WebDriver> wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
