@@ -1,0 +1,8 @@
+ImplicitWait
+
+ImplicitWait Directs the Selenium WebDriver to wait for certain amount of time before throwing the exception in the console
+
+Implicit wait Applied Globally
+Performance issues cant be caught in the ImplicitWait
+
+driver.manage().timeouts().Implicitwait(Duration.ofSeconds(5));
