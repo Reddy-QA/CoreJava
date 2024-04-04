@@ -1,0 +1,23 @@
+package VariableDemo;
+
+public class VariableDemoExample {
+	
+	//Variables are the memory allocations used to store some data
+	//Global variables are declared outside the main method but inside the class
+	//Static variables are declared outside the main method but inside the class
+	//Local variable are declared inside the main method
+	
+	//For accessing the global variables we have to create the object of that particular class
+	int i=10;
+	static int j=20;
+	
+	public static void main(String[] args) {
+		int k=30;
+		
+		VariableDemoExample v=new VariableDemoExample();
+		System.out.println("Local Variable is "+k);
+		System.out.println("Global variable is "+v.i);
+		System.out.println("Static variable is "+j);
+	}
+
+}
