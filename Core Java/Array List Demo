@@ -1,0 +1,55 @@
+//Arrays are used to store the multiple values in a single variable
+There are two types of Arrays and also we can declare the arrays in two different ways
+Single Dimensional Array
+Multi Dimensional array
+
+int[] array=new int[5];
+int[] arrays={2,4,6,7,9,11,14,15,18};
+
+Array indexes will always starts from the oth index
+
+package Arrays;
+
+public class Demo {
+	
+	public static void main(String[] args) {
+		
+	
+	int[] a= {12,23,34,45,56,67,78,89};
+	
+	for(int i=0;i<a.length;i++)
+	{
+	
+		if(a[i]%2==0)
+		{
+		
+			System.out.println(a[i]);
+		
+		
+	}
+
+//Enhanced For Loop
+for(String i:s)
+	{
+		System.out.println(i);
+	}
+
+ArrayList<String> array=new ArrayList<String>();
+	array.add("Prathap");
+	array.add("Reddy");
+	array.add("Java");
+	array.add("Selenium");
+	array.add("Automation");
+	array.add("Testing");
+	array.remove(5);
+	
+	for(int i=0;i<array.size();i++)
+	{
+		System.out.println(array.get(i));
+	}
+
+}
+	
+}
+
+}
