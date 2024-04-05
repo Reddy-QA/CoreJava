@@ -1,0 +1,52 @@
+package Abstraction;
+
+//Exposing only required or the Important things is called as the Abstraction
+//Abstraction can be obtained in 2 ways
+//By using the Abstract class
+//By using the Interface
+
+//Constructor is allowed
+//Multiple Inheritance is not allowed
+//Abstract class keyword is used
+
+public abstract class AbstractClass {
+	
+	public abstract void m1(int i);
+	
+	public AbstractClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void m2()
+	{
+		System.out.println("Instance Method");
+	}
+
+	public void m3()
+	{
+		System.out.println("Static Method");
+	}
+}
+
+================================================================================================================================================================
+package Abstraction;
+
+public  class AbstractMain  extends AbstractClass {
+
+	@Override
+	public void m1(int i) {
+		System.out.println(i);
+		System.out.println("This is the Abstract Method");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		AbstractMain am=new AbstractMain();
+		am.m1(10);
+		am.m2();
+		am.m3();
+	}
+	
+
+}
