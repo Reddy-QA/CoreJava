@@ -1,0 +1,28 @@
+Constructor name should be same as a class name
+Constructor does not have any return type not even the void
+There are two types of constructors
+Default
+Parameterized Constructor
+=============================================================================================================================================================
+package CostructorDemo;
+
+public class ConstructorExample {
+	
+	public ConstructorExample()
+	{
+		System.out.println("Default Constructor");
+	}
+	
+	public ConstructorExample(String msg)
+	{
+		System.out.println("Parameterized Constructor");
+	}
+	
+	public static void main(String[] args) {
+		
+		ConstructorExample ce=new ConstructorExample();
+		ConstructorExample ce1=new ConstructorExample("reddy");
+	}
+
+}
+================================================================================================================================================================
