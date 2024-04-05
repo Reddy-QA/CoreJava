@@ -1,0 +1,24 @@
+package ConditionalStatements;
+
+public class MinimumNumberDemo {
+
+	public static void main(String[] args) {
+		
+		int a=50;
+		int b=30;
+		int c=10;
+		
+		if(a<b && a<c)
+		{
+			System.out.println("Minimum Number is a");
+		}else if(b<c &&b<a)
+		{
+			System.out.println("Minimum Number is b");
+		}else
+		{
+			System.out.println("Minimum number is c");
+		}
+
+	}
+
+}
