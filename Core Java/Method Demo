@@ -1,0 +1,38 @@
+public class InstanceMethodsDemoExample {
+	
+	//When you define a method with a static keyword, then it is defined as static method
+	//When we define a method without a static keyword, then it is called as the Instance method
+		public void m1()
+		{
+			System.out.println("This is the Instance method");
+		}
+		
+		
+		public void m2(int i)
+		{
+			System.out.println("This is the Parameterized Instance method");
+		}
+		
+		public int m3()
+		{
+			System.out.println("This is the return type instance method");
+			return 10;
+		}
+		
+		public String m4(String imsg)
+		{
+			System.out.println("This is the return type with parameterized instance method");
+			return "PrathapReddy";
+		}
+		
+		public static void main(String[] args) {
+			InstanceMethodsDemoExample md=new InstanceMethodsDemoExample();
+			md.m1();
+			md.m2(10);
+			System.out.println(md.m3());
+			System.out.println(md.m4("Rockstar"));
+		}
+
+	}
+
+
