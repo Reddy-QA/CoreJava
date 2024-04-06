@@ -1,0 +1,21 @@
+Once we declare the variable as final, then it cannot be modified
+Final Variable can be applied to Variables, Methods, and also Inner Class
+
+public class FinalKeywordDemo{
+public static void main(String[] args){
+
+final int id=20;
+int j=30;
+
+public void m1()
+{
+system.out.println("Final Variable is : "+id);
+system.out.println)"Global Variable is : "+j);
+}
+
+public static void main(Strings[]args)
+{
+FinalKeywordDemo fd=new FinalKeywordDemo();
+fd.m1();
+}
+}
