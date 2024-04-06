@@ -1,0 +1,56 @@
+Super in java is used as a reference variable
+It is used to refer the Immediate super class Object
+
+package SuperKeyword;
+
+public class SuperDemoA {
+	
+	public SuperDemoA()
+	{
+		System.out.println("This is the Parent class Constructor");
+	}
+	
+	public SuperDemoA(String msg)
+	{
+		System.out.println("This is the Parent class Parameterized Constructor");
+	}
+	
+	int i=11;
+	
+	public void getData()
+	{
+		System.out.println("This is the Parent class Instance method");
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package SuperKeyword;
+
+public class SuperDemoB extends SuperDemoA {
+	
+	public SuperDemoB()
+	{
+		super(" ");
+		System.out.println("This is the child class constructor");
+	}
+	
+	int i=23;
+	
+	public void m1()
+	{
+		int id=21;
+		System.out.println(id);
+		System.out.println(this.i);
+		System.out.println("Parent class variable"+super.i);
+		super.getData();
+		
+	}
+	
+	public static void main(String[] args) {
+		SuperDemoB sb=new SuperDemoB();
+		sb.m1();
+	}
+
+}
