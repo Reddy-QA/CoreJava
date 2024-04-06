@@ -1,0 +1,55 @@
+String is the Collection of sequence of characters
+
+package StringKeyword;
+
+public class StringDemo {
+	
+	public static void main(String[] args) {
+		
+		String s="Prathap Reddy ";
+		String s1="Selenium";
+		
+		System.out.println("Length of the String "+s.length());
+		System.out.println("Print the first character letter "+s.charAt(0));
+		System.out.println();
+		
+		if(s.isEmpty())
+		{
+			System.out.println("String is empty");
+		}
+		else
+		{
+			System.out.println("String is not empty");
+		}
+		
+		//To print the characters one by one
+		for(char c:s.toCharArray())
+		{
+			System.out.println(c);
+		}
+		System.out.println();
+		
+		for(char c:s.toCharArray())
+		{
+			System.out.print(c+",");
+		}
+		
+		//Prints the ASCII Value depending upon the characters
+		System.out.println(s.codePointAt(0));
+		System.out.println(s.codePointAt(2));
+		
+		//Prints the characters in the Upper Case
+		System.out.println(s.toUpperCase());
+		
+		
+		//Prints the characters in the Lower case
+		System.out.println(s.toLowerCase());
+		
+		
+		
+		
+		
+		
+	}
+
+}
