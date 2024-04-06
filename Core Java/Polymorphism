@@ -1,0 +1,104 @@
+Polymorphisim in java, is an object ability to take on various forms.
+It enables us to complete one action in many ways
+An entity which behaves differently in different cases is called as Polymorphisim.
+Compile time error is called as method overloading
+Run-time error is called as method overriding
+
+In Method overloading where the method name should be remain same, but the parameters inside the method should be different.
+The process by implementing the super class method into the sub class is called as method Overriding
+
+Method Overloading
+package Polymorphisim;
+
+public class Arithmatic {
+
+	public void sum(int a)
+	{
+		System.out.println(a+a);
+	}
+	public void sum(double a)
+	{
+		System.out.println(a+a);
+	}
+	public void sum(double a,double b)
+	{
+		System.out.println(a+b);
+	}
+	public void sum(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+	public void sum(int a,double b)
+	{
+		System.out.println(a+b);
+	}
+	public void sum(double a,int b)
+	{
+		System.out.println(a+b);
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package Polymorphisim;
+
+public class MainClass extends Arithmatic {
+
+	public static void main(String[] args) {
+		
+		Arithmatic am=new Arithmatic();
+		am.sum(10);
+		am.sum(12.5);
+		am.sum(12.5, 12.5);
+		am.sum(10, 10);
+		am.sum(12.5, 10);
+		am.sum(12.5, 10);
+		am.sum(10, 12.5);
+		am.sum(10, 10);
+
+	}
+
+}
+
+========================================================================================================================================================================================
+
+package Polymorphisim;
+
+public class A {
+	
+	public void m1()
+	{
+		System.out.println("A-m1");
+	}
+	
+	
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package Polymorphisim;
+
+public class B extends A {
+	
+	public void m1()
+	{
+		System.out.println("B-m1");
+	}
+	public void m2()
+	{
+		System.out.println("B-m2");
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package Polymorphisim;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		B obj=new B();
+		obj.m1();
+		obj.m2();
+
+	}
+
+}
