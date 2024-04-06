@@ -1,0 +1,79 @@
+Static keyword is used for the memory management
+Static keyword is applied to the methods,variables,Inner class and also blocks
+
+Static keyword cannot be applied to
+Local variable
+Constructor
+Outer class
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+public class StaticVariable {
+	
+
+	
+	static int id=21;
+
+	public static void main(String[] args) {
+		System.out.println("Direct Access :"+id);
+		
+		System.out.println("By using the classname :"+StaticVariable.id);
+
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package StaticKeyword;
+
+public class StaticMethod {
+	
+	static int a=20;
+	 int b=30;
+	
+	public void display()
+	{
+		System.out.println(a);
+	}
+	
+	public static void show()
+	{
+		System.out.println(a);
+		//System.out.println(b);
+		//If we access the non static variable in static method, compile throw error
+	}
+
+	public static void main(String[] args) {
+		StaticMethod sm=new StaticMethod();
+		sm.display();
+		sm.show();
+		
+		
+
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package StaticKeyword;
+
+public class StaticBlock {
+	
+	{
+		System.out.println("Default Block");
+	}
+	
+	static {
+		System.out.println("Static Block");
+	}
+
+	public static void main(String[] args) {
+		
+		StaticBlock sb=new StaticBlock();
+	
+
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
