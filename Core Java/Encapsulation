@@ -1,0 +1,43 @@
+Encapsulation means binding of data into single entity.
+It is one of the most important principles in java
+Encapsulation is useful whenever the clients wants to hide the useful Information or the Protected Data.
+
+public class Problem{
+public static void main(Strings[] args){
+
+Scanner sc=new Scanner(System.in);
+system.out.println("Enter your age");
+int age=sc.nextInt();
+system.out.println("Your age is");
+}
+}
+
+===================================================================================================================================================================================
+public class Solution{
+
+private int validAge;
+public void setage(int age)
+{
+if(age>0)
+{
+validAge=age;
+}else
+{
+validage=0;
+}
+system.out.println("Your age is :"+validAge);
+}
+
+public static void main(Strings[] args){
+Scanner sc=new Scanner(System.in);
+system.out.println("Enter your age");
+int a=sc.nextInt();
+
+Solution s=new Solution();
+s.setage(a);
+}
+
+}
+
+
+
