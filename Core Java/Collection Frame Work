@@ -1,0 +1,156 @@
+File input stream is used to read the data in the Excel file
+File Output stream is used to write the data into excel file.
+
+Collection Framework
+
+Java Collection Framework provides many Interfaces like set,List,Queue,Deque
+Java Collection Framework consists of Different Classes like(ArrayList,LinkedList,Vector,Hashset,LinkedHashTest,TreeSet)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ArrayList
+
+package ListInterfaceDemo;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> array=new ArrayList<String>();
+		array.add("Prathap");
+		array.add("Reddy");
+		array.add("Core");
+		array.add("Java");
+		array.add("Selenium");
+		array.add("Automation");
+		array.add("Testing");
+		array.remove(5);
+		
+		
+		for(int i=0;i<array.size();i++)
+		{
+			System.out.println(array.get(i));
+		}
+		
+
+	}
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HashSet Example
+
+package ListInterfaceDemo;
+
+import java.util.HashSet;
+
+public class HahSetExample {
+
+	public static void main(String[] args) {
+		
+		HashSet hs=new HashSet();
+		hs.add("Queue");
+		hs.add("Codes");
+		hs.add("Technology");
+		hs.add("101");
+		
+		
+		System.out.println(hs);
+
+	}
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Iterator Demo
+
+package ListInterfaceDemo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class IteratorDemoExample {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("Queue");
+		al.add("Codes");
+		
+		System.out.println("Iteration of ArrayList by for loop");
+		for(int i=0;i<al.size();i++)
+		{
+			System.out.println(al.get(i));
+		}
+		
+		System.out.println("Iteration of ArrayList by using Iterator");
+		Iterator<String> it=al.iterator();
+		while(it.hasNext())
+		{
+			Object o=it.next();
+			System.out.println(o);
+		}
+		
+		System.out.println("Iteration of ArrayList by using List Iterator");
+		ListIterator<String> li=al.listIterator();
+		while(it.hasNext())
+		{
+			Object o=li.next();
+			System.out.println(o);
+		}
+		
+	}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LinkedList Demo
+
+package ListInterfaceDemo;
+
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		
+		LinkedList<String> list = new LinkedList<String>();
+		list.add(null);
+		list.add("Queue"); //add
+		list.add("Codes");
+		list.add("Technology");
+		list.remove(null); //Remove
+		list.addFirst("Reddy"); //Print at the First
+		list.addLast("Prathap");// Print the output in the last
+		list.clear(); 			//Remove/clear all the data
+		
+		
+		for(int i=0;i<list.size();i++)
+		{
+			System.out.println(list.get(i));
+		}
+
+	}
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vector Demo
+
+package ListInterfaceDemo;
+
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) {
+		
+		Vector v=new Vector();
+		System.out.println("Initial Capacity "+v.capacity());
+		v.add(null);
+		v.add("Queue");
+		v.add("Codes");
+		v.add(100);
+		for(int i =0; i<v.size(); i++) {
+		System.out.println(v.get(i));
+		}
+		}
+
+	}
